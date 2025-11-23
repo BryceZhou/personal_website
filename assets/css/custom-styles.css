@@ -344,19 +344,28 @@ background: #172D44;
 
 % newly added
 %%%%%%%%%%%%%%%%%%%%%%%%
-@media (min-width: 768px) {
+@media(min-width:768px) {
     .navbar-side {
         position: fixed;
-        top: 60px;     /* height of the top navbar */
-        left: 0;
-        width: 260px;
-        height: 100%;
+        height: 100vh;
         overflow-y: auto;
+        top: 0;
+        left: 0;
     }
-
+    
     #page-wrapper {
-        margin-left: 260px !important; /* prevent overlap */
+        margin-left: 260px;
     }
+}
+
+/* Ensure the sidebar doesn't have horizontal scroll */
+.sidebar-collapse {
+    width: 260px !important;
+}
+
+/* Optional: Add a subtle shadow to separate sidebar from content */
+.navbar-side {
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 %%%%%%%%%%%%%%%%%%%%%%%%
 
