@@ -331,6 +331,7 @@ padding-top: 4px;
 	padding:15px 10px;
 	%%%%%%%%%%%%%%%
 	position: sticky;
+	top: 0;
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%
 }
 .sidebar-collapse > .nav > li {
