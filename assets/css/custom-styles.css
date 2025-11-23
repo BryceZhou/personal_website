@@ -415,17 +415,10 @@ line-height: 1.428571429;
 		%%%%%%%%%%%%%
 		position: fixed;
 		top: 0;
-        left: 0;
-        height: 100%;
-        width: 260px;
-        overflow-y: auto;
+		bottom: 0;
+		overflow-y: auto;
 		%%%%%%%%%%%%
         width: 260px;
-		%%%%%%%%%%%%%%
-		#page-wrapper{
-        margin-left: 260px; /* page content moves right */
-    }
-		%%%%%%%%%%%%%
     }
 
    .navbar {
