@@ -413,9 +413,19 @@ line-height: 1.428571429;
         z-index: 1;
         /*...position: absolute;*/
 		%%%%%%%%%%%%%
-		position: sticky;
+		position: fixed;
+		top: 0;
+        left: 0;
+        height: 100%;
+        width: 260px;
+        overflow-y: auto;
 		%%%%%%%%%%%%
         width: 260px;
+		%%%%%%%%%%%%%%
+		#page-wrapper{
+        margin-left: 260px; /* page content moves right */
+    }
+		%%%%%%%%%%%%%
     }
 
    .navbar {
