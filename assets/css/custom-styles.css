@@ -320,16 +320,16 @@ padding-top: 4px;
 }
 .sidebar-collapse .nav {
 	padding:0;
+
+	%%%%%%%%%%%%%%%
+	position: sticky;
+	top: 0;
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%
 }
 .sidebar-collapse .nav > li > a {
 	color:#fff;
 	background:transparent;
 	text-shadow:none;
-	%%%%%%%%%%%%%%%
-	position: sticky;
-	top: 0;
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
 }
 .sidebar-collapse > .nav > li > a {
 	padding:15px 10px;
