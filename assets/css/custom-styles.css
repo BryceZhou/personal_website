@@ -21,7 +21,9 @@ body {
     padding: 15px 15px;
     min-height: 600px;
     background:#E5EBF2;
-   
+   ############### new
+	margin-left: 260px;
+   #################
 }
 #page-inner {
     width:100%;
@@ -344,28 +346,21 @@ background: #172D44;
 
 % newly added
 %%%%%%%%%%%%%%%%%%%%%%%%
-@media(min-width:768px) {
-    .navbar-side {
-        position: fixed;
-        height: 100vh;
-        overflow-y: auto;
-        top: 0;
-        left: 0;
-    }
-    
-    #page-wrapper {
-        margin-left: 260px;
-    }
-}
-
-/* Ensure the sidebar doesn't have horizontal scroll */
-.sidebar-collapse {
-    width: 260px !important;
-}
-
-/* Optional: Add a subtle shadow to separate sidebar from content */
 .navbar-side {
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    /* * ADD THESE LINES: Fixes the sidebar to the viewport
+    * and makes it full height. 
+    */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 260px; /* Must match the margin-left on #page-wrapper */
+    overflow-y: auto; /* Allows the menu to scroll internally if it has too many items */
+    z-index: 1000; /* Ensures the sidebar stays on top of other elements */
+
+    /* Keep existing styles, which in your file are: */
+    border: none;
+    background-color: transparent; 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%
 
